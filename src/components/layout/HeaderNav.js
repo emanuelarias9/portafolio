@@ -12,13 +12,28 @@ export const HeaderNav = () => {
       <nav>
         <ul>
           <li>
-            <NavLink to="/home">Inicio</NavLink>
+            <NavLink
+              to="/home"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Inicio
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/portafolio">Portafolio</NavLink>
+            <NavLink
+              to="/portafolio"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Portafolio
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/curriculum">Curriculum</NavLink>
+            <NavLink
+              to="/curriculum"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Curriculum
+            </NavLink>
           </li>
           <li>
             <NavLink to="/contacto">Contacto</NavLink>

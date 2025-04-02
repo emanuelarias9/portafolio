@@ -1,5 +1,9 @@
 import React from "react";
 
 export const Curriculum = () => {
-  return <div>Curriculum</div>;
+  return (
+    <div className="page">
+      <h1 className="heading">Curriculum</h1>
+    </div>
+  );
 };

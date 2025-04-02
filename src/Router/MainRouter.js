@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, BrowserRouter, NavLink } from "react-router-dom";
+import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import { Home } from "../components/Home";
 import { Portafolio } from "../components/Portafolio";
 import { Curriculum } from "../components/Curriculum";
@@ -13,7 +13,7 @@ export const MainRouter = () => {
       <HeaderNav />
       <section className="content">
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/" element={<Navigate to="/home" />}></Route>
           <Route path="/home" element={<Home />}></Route>
           <Route path="/portafolio" element={<Portafolio />}></Route>
           <Route path="/curriculum" element={<Curriculum />}></Route>
