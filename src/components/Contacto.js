@@ -1,16 +1,39 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export const Contacto = () => {
+  const [success, setSuccess] = useState(false);
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm("service_qyvcwte", "template_wxka8qs", form.current, {
+        publicKey: "cxOahMqeuvqW1iH85",
+      })
+      .then(
+        () => {
+          setSuccess(true);
+          setTimeout(() => setSuccess(false), 5000);
+        },
+        (error) => {
+          console.error("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <div className="page pageContact">
       <h1 className="heading">Contacto</h1>
-      <form className="contact">
-        <input type="text" placeholder="nombre" />
-        <input type="text" placeholder="email" />
-        <textarea placeholder="Motivo de contacto"></textarea>
+      <form ref={form} className="contact" onSubmit={sendEmail}>
+        <input type="text" placeholder="nombre" name="nombre" />
+        <input type="email" placeholder="email" name="email" />
+        <textarea placeholder="Motivo de contacto" name="mensaje"></textarea>
         <input type="submit" value="Enviar" />
       </form>
-
+      {success && (
+        <div className="toast-notification">
+          <p> Mensaje enviado correctamente</p>
+        </div>
+      )}
       {/* Sección de información de contacto */}
       <div className="contact-info">
         <h2>También puedes contactarme por:</h2>

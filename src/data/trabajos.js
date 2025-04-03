@@ -2,7 +2,7 @@ export const trabajos = [
   {
     id: "Reactflix",
     nombre: "ReactFlix",
-    url: "#",
+    url: "https://github.com/emanuelarias9/react-peliculas",
     tecnologias: "HTML, CSS, React",
     categoria: "Desarrollo web",
     descripcion:
@@ -11,7 +11,7 @@ export const trabajos = [
   {
     id: "Syncro",
     nombre: "Syncro",
-    url: "#",
+    url: "https://github.com/emanuelarias9/Syncro",
     tecnologias: ".NET Maui, C#",
     categoria: "Desarrollo movil",
     descripcion:

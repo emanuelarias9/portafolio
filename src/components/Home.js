@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { ListadoTrabajos } from "./ListadoTrabajos";
 
 export const Home = () => {
@@ -7,7 +6,7 @@ export const Home = () => {
     <div className="home">
       <h1>
         Hola, soy <strong> Emanuel Arias</strong> un ingeniero de sistemas con 6
-        años de experiencia como <strong>fullstack developer.</strong>
+        años de experiencia como <strong>Fullstack developer.</strong>
       </h1>
       <section className="lasts-works">
         <h2 className="heading">Mis proyectos</h2>
