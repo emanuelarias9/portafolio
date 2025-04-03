@@ -27,14 +27,14 @@ export const HeaderNav = () => {
               Portafolio
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               to="/curriculum"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
               Curriculum
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink to="/contacto">Contacto</NavLink>
           </li>

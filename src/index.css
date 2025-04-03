@@ -224,3 +224,49 @@ button {
   max-height: 100%;
   object-fit: contain;
 }
+
+.pageContact {
+  display: flex;
+  flex-direction: column; /* Apila los elementos verticalmente */
+  align-items: center; /* Centra horizontalmente */
+}
+.contact {
+  display: flex;
+  flex-direction: column; /* Mantiene los inputs apilados */
+  width: 283px; /* Mismo ancho que los inputs/textarea */
+}
+
+/* Estilos para la sección de información de contacto */
+.contact-info {
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.contact-info h2 {
+  color: #444;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 15px;
+  color: #444;
+  font-size: 18px;
+}
+
+.contact-info a {
+  color: #fa4529;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
