@@ -145,3 +145,82 @@ button {
   padding: 15px;
   border: 0px;
 }
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.workItem {
+  flex-basis: 35%;
+  flex-grow: 1;
+  margin: 30px;
+}
+
+.workItem .mask {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  box-shadow: 0px 5px 15px #ddd;
+}
+
+.workItem img {
+  width: 100%;
+  transition: all 500ms;
+}
+
+.workItem .mask:hover img {
+  width: 130%;
+  margin-right: 30%;
+}
+
+.workItem span {
+  color: gray;
+  display: block;
+  margin-top: 35px;
+}
+
+.pageWork h2,
+.workItem h2 {
+  color: black;
+  font-size: 30px;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.pageWork a,
+.workItem a {
+  color: black;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+.pageWork a:hover,
+.workItem a:hover {
+  color: #fa4529;
+}
+
+.workItem h3 {
+  display: block;
+  color: gray;
+  margin-top: 0px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.pageWork .mask {
+  display: flex; /* Activa Flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  width: 100%; /* Ajusta al ancho del contenedor padre */
+  height: 100%; /* Ajusta al alto del contenedor padre */
+  overflow: hidden;
+}
+
+.pageWork .mask img {
+  max-width: 100%; /* La imagen no superará el ancho del div */
+  max-height: 100%; /* La imagen no superará el alto del div */
+  object-fit: contain; /* Mantiene la relación de aspecto sin recortar */
+}
