@@ -211,16 +211,16 @@ button {
 }
 
 .pageWork .mask {
-  display: flex; /* Activa Flexbox */
+  display: flex;
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
-  width: 100%; /* Ajusta al ancho del contenedor padre */
-  height: 100%; /* Ajusta al alto del contenedor padre */
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
 .pageWork .mask img {
-  max-width: 100%; /* La imagen no superará el ancho del div */
-  max-height: 100%; /* La imagen no superará el alto del div */
-  object-fit: contain; /* Mantiene la relación de aspecto sin recortar */
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }

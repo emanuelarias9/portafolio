@@ -6,7 +6,7 @@ export const trabajos = [
     tecnologias: "HTML, CSS, React",
     categoria: "Desarrollo web",
     descripcion:
-      "ReactFlix: Un proyecto para dominar React Hooks ReactFlix es una aplicación web interactiva para gestionar tu colección de películas, desarrollada con React como proyecto de aprendizaje. Diseñada para practicar los fundamentos de la librería",
+      "Un proyecto para dominar React Hooks ReactFlix es una aplicación web interactiva para gestionar tu colección de películas, desarrollada con React como proyecto de aprendizaje. Diseñada para practicar los fundamentos de la librería",
   },
   {
     id: "Syncro",
