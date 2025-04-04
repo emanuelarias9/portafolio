@@ -17,4 +17,13 @@ export const trabajos = [
     descripcion:
       "Syncro es un Proyecto creado para tener una previsualizacion del daño que haria el hechizo de syncro del xelor basado en el nivel del hechizo y las resistencias del enemigo",
   },
+  {
+    id: "ApiRestNetCore",
+    nombre: "API RESTful ",
+    url: "https://github.com/emanuelarias9/ApiRestNetCore",
+    tecnologias: ".NET 8, C#, Entity Framework",
+    categoria: "Desarrollo web",
+    descripcion:
+      "Este proyecto es una API RESTful desarrollada con ASP.NET Core 8 y Entity Framework. Su objetivo principal es servir como práctica para comprender los conceptos fundamentales de Entity Framework y su integración en aplicaciones .NET modernas.",
+  },
 ];
