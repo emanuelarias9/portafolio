@@ -13,7 +13,7 @@ export const HeaderNav = () => {
         <ul>
           <li>
             <NavLink
-              to="/Portafolio/Home"
+              to="/portafolio/home"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
               Inicio
@@ -21,7 +21,7 @@ export const HeaderNav = () => {
           </li>
           <li>
             <NavLink
-              to="/Portafolio/Proyectos"
+              to="/portafolio/proyectos"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
               Portafolio
