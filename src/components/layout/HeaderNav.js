@@ -13,7 +13,7 @@ export const HeaderNav = () => {
         <ul>
           <li>
             <NavLink
-              to="/home"
+              to="/Portafolio/Home"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
               Inicio
@@ -21,7 +21,7 @@ export const HeaderNav = () => {
           </li>
           <li>
             <NavLink
-              to="/portafolio"
+              to="/Portafolio/Proyectos"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
               Portafolio
@@ -36,7 +36,7 @@ export const HeaderNav = () => {
             </NavLink>
           </li> */}
           <li>
-            <NavLink to="/contacto">Contacto</NavLink>
+            <NavLink to="/Portafolio/Contacto">Contacto</NavLink>
           </li>
         </ul>
       </nav>

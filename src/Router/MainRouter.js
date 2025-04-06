@@ -14,12 +14,15 @@ export const MainRouter = () => {
       <HeaderNav />
       <section className="content">
         <Routes>
-          <Route path="/" element={<Navigate to="/home" />}></Route>
-          <Route path="/home" element={<Home />}></Route>
-          <Route path="/portafolio" element={<Portafolio />}></Route>
-          <Route path="/curriculum" element={<Curriculum />}></Route>
-          <Route path="/contacto" element={<Contacto />}></Route>
-          <Route path="/proyecto/:id" element={<Project />}></Route>
+          <Route path="/Portafolio/Home" element={<Home />}></Route>
+          <Route
+            path="/Portafolio"
+            element={<Navigate to="/Portafolio/Home" />}
+          ></Route>
+          <Route path="/Portafolio/Proyectos" element={<Portafolio />}></Route>
+          <Route path="/Portafolio/curriculum" element={<Curriculum />}></Route>
+          <Route path="/Portafolio/contacto" element={<Contacto />}></Route>
+          <Route path="/Portafolio/proyecto/:id" element={<Project />}></Route>
         </Routes>
       </section>
       <Footer />
