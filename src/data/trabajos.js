@@ -9,6 +9,15 @@ export const trabajos = [
       "Un proyecto para dominar React Hooks ReactFlix es una aplicación web interactiva para gestionar tu colección de películas, desarrollada con React como proyecto de aprendizaje. Diseñada para practicar los fundamentos de la librería",
   },
   {
+    id: "ApiRestNode",
+    nombre: "API REST Node.js",
+    url: "https://github.com/emanuelarias9/Api-rest-node",
+    tecnologias: "NodeJS, ExpressJS, MongoDB, Mongoose, Multer, Swagger UI",
+    categoria: "Desarrollo web",
+    descripcion:
+      "API RESTful para la gestión de artículos de un blog, desarrollada con Node.js, Express.js, MongoDB y Mongoose. Permite operaciones CRUD completas, búsqueda avanzada y gestión de imágenes, todo documentado con Swagger/OpenAPI.",
+  },
+  {
     id: "Syncro",
     nombre: "Syncro",
     url: "https://github.com/emanuelarias9/Syncro",
@@ -19,9 +28,9 @@ export const trabajos = [
   },
   {
     id: "ApiRestNetCore",
-    nombre: "API RESTful ",
+    nombre: "API REST .NET Core",
     url: "https://github.com/emanuelarias9/ApiRestNetCore",
-    tecnologias: ".NET 8, C#, Entity Framework",
+    tecnologias: ".NET 8, C#, Entity Framework, Swagger UI",
     categoria: "Desarrollo web",
     descripcion:
       "Este proyecto es una API RESTful desarrollada con ASP.NET Core 8 y Entity Framework. Su objetivo principal es servir como práctica para comprender los conceptos fundamentales de Entity Framework y su integración en aplicaciones .NET modernas.",

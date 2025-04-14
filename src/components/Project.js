@@ -11,13 +11,13 @@ export const Project = () => {
   return (
     <div className="page pageWork">
       <div className="mask">
-        <img src={"/Portafolio/images/" + proyecto.id + ".png"} />
+        <img src={"/portafolio/images/" + proyecto.id + ".png"} alt="" />
       </div>
       <h1 className="heading">{proyecto.nombre} </h1>
       <p>{proyecto.tecnologias} </p>
       <p>{proyecto.descripcion} </p>
       <h2>
-        <a href={proyecto.url} target="_blank">
+        <a href={proyecto.url} target="_blank" rel="noreferrer">
           Ir al proyecto
         </a>
       </h2>
