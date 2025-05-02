@@ -4,21 +4,20 @@ import emailjs from "@emailjs/browser";
 export const Contacto = () => {
   const [success, setSuccess] = useState(false);
   const form = useRef();
-  const sendEmail = (e) => {
+  const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+  const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+  const sendEmail = async (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm("service_qyvcwte", "template_wxka8qs", form.current, {
+    try {
+      await emailjs.sendForm(serviceId, templateId, form.current, {
         publicKey: "cxOahMqeuvqW1iH85",
-      })
-      .then(
-        () => {
-          setSuccess(true);
-          setTimeout(() => setSuccess(false), 5000);
-        },
-        (error) => {
-          console.error("FAILED...", error.text);
-        }
-      );
+      });
+
+      setSuccess(true);
+      setTimeout(() => setSuccess(false), 5000);
+    } catch (error) {
+      console.error("FAILED...", error);
+    }
   };
   return (
     <div className="page pageContact">
