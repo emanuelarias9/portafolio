@@ -2,7 +2,7 @@ export const trabajos = [
   {
     id: "Reactflix",
     nombre: "ReactFlix",
-    url: "https://github.com/emanuelarias9/react-peliculas",
+    urlGithub: "https://github.com/emanuelarias9/react-peliculas",
     tecnologias: "HTML, CSS, React",
     categoria: "Desarrollo web",
     descripcion:
@@ -11,7 +11,8 @@ export const trabajos = [
   {
     id: "ApiRestNode",
     nombre: "API REST Node.js",
-    url: "https://github.com/emanuelarias9/Api-rest-node",
+    urlGithub: "https://github.com/emanuelarias9/Api-rest-node",
+    urlDeploy: "https://api-blog-b0fd.onrender.com/api-docs/",
     tecnologias: "NodeJS, ExpressJS, MongoDB, Mongoose, Multer, Swagger UI",
     categoria: "Desarrollo web",
     descripcion:
@@ -20,7 +21,7 @@ export const trabajos = [
   {
     id: "Syncro",
     nombre: "Syncro",
-    url: "https://github.com/emanuelarias9/Syncro",
+    urlGithub: "https://github.com/emanuelarias9/Syncro",
     tecnologias: ".NET Maui, C#",
     categoria: "Desarrollo movil",
     descripcion:
@@ -29,7 +30,7 @@ export const trabajos = [
   {
     id: "ApiRestNetCore",
     nombre: "API REST .NET Core",
-    url: "https://github.com/emanuelarias9/ApiRestNetCore",
+    urlGithub: "https://github.com/emanuelarias9/ApiRestNetCore",
     tecnologias: ".NET 8, C#, Entity Framework, Swagger UI",
     categoria: "Desarrollo web",
     descripcion:

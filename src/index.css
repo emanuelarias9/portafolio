@@ -307,3 +307,12 @@ button {
     transform: translateY(0);
   }
 }
+
+.links {
+  display: flex;
+}
+
+.links .link {
+  margin-right: 3.125rem;
+  margin-left: 0.625rem;
+}
