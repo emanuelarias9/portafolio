@@ -1,12 +1,13 @@
 export const trabajos = [
   {
-    id: "Reactflix",
-    nombre: "ReactFlix",
-    urlGithub: "https://github.com/emanuelarias9/react-peliculas",
-    tecnologias: "HTML, CSS, React",
+    id: "Blog",
+    nombre: "Blog",
+    urlGithub: "https://github.com/emanuelarias9/Blog",
+    urlDeploy: "https://blog-esv7.onrender.com",
+    tecnologias: "HTML, CSS, React + Vite, React Router DOM, EmailJS, Api REST",
     categoria: "Desarrollo web",
     descripcion:
-      "Un proyecto para dominar React Hooks ReactFlix es una aplicación web interactiva para gestionar tu colección de películas, desarrollada con React como proyecto de aprendizaje. Diseñada para practicar los fundamentos de la librería",
+      "Este proyecto es un Blog desarrollado en React que consume una API REST construida en NodeJS Los usuarios pueden crear, ver, editar y eliminar artículos, buscar por palabra clave, y navegar entre distintas páginas como inicio, contacto y listado de publicaciones.",
   },
   {
     id: "ApiRestNode",
