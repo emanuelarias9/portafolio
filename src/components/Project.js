@@ -14,9 +14,6 @@ export const Project = () => {
   }, []);
   return (
     <div className="page pageWork">
-      <div className="mask">
-        <img src={"/portafolio/images/" + proyecto.id + ".png"} alt="" />
-      </div>
       <h1 className="heading">{proyecto.nombre} </h1>
       <p>{proyecto.tecnologias} </p>
       <p>{proyecto.descripcion} </p>
@@ -45,6 +42,9 @@ export const Project = () => {
             </a>
           </h2>
         )}
+      </div>
+      <div className="mask">
+        <img src={"/portafolio/images/" + proyecto.id + ".png"} alt="" />
       </div>
     </div>
   );
