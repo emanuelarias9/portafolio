@@ -29,7 +29,7 @@ export const HeaderNav = () => {
           </li>
           <li>
             <a
-              href="/Emanuel-Arias-software-engineer.pdf"
+              href="/portafolio/Emanuel-Arias-software-engineer.pdf"
               download="Emanuel-Arias-software-engineer.pdf"
             >
               Curriculum
