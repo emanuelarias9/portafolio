@@ -27,13 +27,26 @@ export const HeaderNav = () => {
               Portafolio
             </NavLink>
           </li>
-          <li>
-            <a
-              href="/portafolio/Emanuel-Arias-software-engineer.pdf"
-              download="Emanuel-Arias-software-engineer.pdf"
-            >
-              Curriculum
-            </a>
+          <li className="dropdown">
+            <span>Curriculum</span>
+            <ul className="submenu">
+              <li>
+                <a
+                  href="/portafolio/Emanuel-Arias-Joiro-Resume.pdf"
+                  download="Emanuel-Arias-Joiro-Resume.pdf"
+                >
+                  Curriculum - EN
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/portafolio/Emanuel-Arias-Joiro-CV.pdf"
+                  download="Emanuel-Arias-Joiro-CV.pdf"
+                >
+                  Curriculum - ES
+                </a>
+              </li>
+            </ul>
           </li>
           <li>
             <NavLink to="/portafolio/contacto">Contacto</NavLink>
