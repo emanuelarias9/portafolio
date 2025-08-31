@@ -9,7 +9,10 @@ export const ListadoTrabajos = ({ limite }) => {
         <article key={trabajo.id} className="workItem">
           <div className="mask">
             <Link to={"/portafolio/proyecto/" + trabajo.id}>
-              <img src={"/portafolio/images/" + trabajo.id + ".png"} />
+              <img
+                src={"/portafolio/images/" + trabajo.id + ".png"}
+                alt={trabajo.id}
+              />
             </Link>
           </div>
           <span>{trabajo.categoria} </span>
@@ -18,7 +21,7 @@ export const ListadoTrabajos = ({ limite }) => {
               {trabajo.nombre}
             </Link>
           </h2>
-          <h3>{trabajo.tecnologias} </h3>
+          <h3>{trabajo.tecnologias}</h3>
         </article>
       ))}
     </section>

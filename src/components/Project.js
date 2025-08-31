@@ -11,11 +11,13 @@ export const Project = () => {
   useEffect(() => {
     let proyecto = trabajos.filter((trabajo) => trabajo.id === params.id);
     setProyecto(proyecto[0]);
-  }, []);
+  }, [params.id]);
   return (
     <div className="page pageWork">
       <h1 className="heading">{proyecto.nombre} </h1>
-      <p>{proyecto.tecnologias} </p>
+      <p>
+        <b>Tecnologias:</b> {proyecto.tecnologias}{" "}
+      </p>
       <p>{proyecto.descripcion} </p>
       <div className="links">
         <h2>
